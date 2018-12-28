@@ -59,8 +59,7 @@ class MyCustomFormState extends State<MyCustomForm> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Padding(
-            padding:
-                EdgeInsets.only(left: 20.0, right: 20.0),
+            padding: EdgeInsets.only(left: 20.0, right: 20.0),
             child: TextFormField(
               decoration:
                   InputDecoration(labelText: 'Enter your email address'),
@@ -72,8 +71,7 @@ class MyCustomFormState extends State<MyCustomForm> {
             ),
           ),
           Padding(
-            padding:
-                EdgeInsets.only(left: 20.0, right: 20.0),
+            padding: EdgeInsets.only(left: 20.0, right: 20.0),
             child: TextFormField(
               obscureText: true,
               decoration: InputDecoration(labelText: 'Enter your password'),
