@@ -1,12 +1,12 @@
-import 'package:first_one/screens/auth/LoginForm.dart';
+import 'package:first_one/screens/auth/CreateAccountForm.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
+class CreateAccountPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _CreateAccountPageState createState() => _CreateAccountPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _CreateAccountPageState extends State<CreateAccountPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,13 +18,13 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               padding: EdgeInsets.all(10.0),
               child: Text(
-                'Login For Text Application',
+                'Create Account For Test Application',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
               ),
             ),
             Container(
-              child: LoginForm(),
+              child: CreateAccountForm(),
             ),
           ],
         ),
