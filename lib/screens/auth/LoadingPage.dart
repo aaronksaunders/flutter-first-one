@@ -29,18 +29,6 @@ class _LoadingPageState extends State<LoadingPage> {
     });
   }
 
-  void _signedIn() {
-    setState(() {
-      authStatus = AuthStatus.signedIn;
-    });
-  }
-
-  void _signedOut() {
-    setState(() {
-      authStatus = AuthStatus.notSignedIn;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     switch (authStatus) {
@@ -53,6 +41,18 @@ class _LoadingPageState extends State<LoadingPage> {
     }
     return null;
   }
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   return new FutureBuilder(
+  //       future: new Future(() async {
+  //         var auth = Auth();
+  //         return await auth.currentUser();
+  //       }),
+  //       builder: (BuildContext context, AsyncSnapshot<String> user) {
+
+  //       });
+  // }
 
   Widget _buildWaitingScreen() {
     return Scaffold(
